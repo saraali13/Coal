@@ -10,7 +10,7 @@ add eax,64
 add eax,54o
 sub eax,0Ah
 
-call writedec;for priting only the answer ,DumpRegs is used for printing regs details
+call writedec;writedec or writeint for priting only the answer ,DumpRegs is used for printing regs details
 exit
 main ENDP
 end main

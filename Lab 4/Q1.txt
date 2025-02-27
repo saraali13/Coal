@@ -1,0 +1,20 @@
+## 1
+coma is missing between the oprands 
+
+## 2
+23 is not a immediate valid address for a destination operand in x86 assembly
+
+## 3
+CX IS 16 Bit register while CH is 8 bit register and both are part of the same register
+
+## 4
+invalid instruction MOVE
+
+## 5
+The destination operand should be a register or a memory, not a immediate value in x86 assembly
+
+## 6
+Two value cannot be added together, a register and a value can be added only in x86 assembly
+
+## 7
+INC keyword only take one operand as an input 

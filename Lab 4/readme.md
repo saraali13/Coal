@@ -11,3 +11,6 @@
 
 ## Q4 (2)
 ![q4 2](https://github.com/user-attachments/assets/9ffb9294-d41e-4865-ba3b-1e2952e90523)
+
+## Q6
+![image](https://github.com/user-attachments/assets/325104ed-5263-44b6-bac4-27d5d5ee464d)

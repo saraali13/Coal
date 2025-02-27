@@ -1,8 +1,7 @@
 # OUTPUT
 
-## Q1
-
 ## Q2
+![image](https://github.com/user-attachments/assets/798eb780-316f-44d1-a3e9-aa58151b5282)
 
 ## Q3
 

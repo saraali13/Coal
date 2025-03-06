@@ -7,5 +7,6 @@
 ![image](https://github.com/user-attachments/assets/2d6b2c5f-76ba-46f1-a742-476fd9207a23)
 
 ## Q5
-![image](https://github.com/user-attachments/assets/96196104-2cf4-4184-8527-a4324481bbd0)
+![image](https://github.com/user-attachments/assets/df99125a-4fd3-4d3d-b071-018afdc7e40c)
+
 

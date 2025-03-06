@@ -9,4 +9,6 @@
 ## Q5
 ![image](https://github.com/user-attachments/assets/df99125a-4fd3-4d3d-b071-018afdc7e40c)
 
+## Q6
+![image](https://github.com/user-attachments/assets/0f893236-c0c0-4d1e-9736-1723de9c12b6)
 

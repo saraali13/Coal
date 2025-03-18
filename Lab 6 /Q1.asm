@@ -4,8 +4,6 @@ INCLUDE Irvine32.inc
 main PROC
     mov ecx,10
 	mov ebx,0
-	mov eax,0
-	call WriteInt
 	mov eax, 1
 	call WriteInt
 

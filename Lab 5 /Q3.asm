@@ -16,5 +16,5 @@ movzx eax,[arr]
 call writedec
 exit
 main endp
-
+; for word we'll add 2 and for dword we'll add 4
 end main

@@ -14,3 +14,13 @@
 ![image](https://github.com/user-attachments/assets/06b55f24-1218-4b67-a9c2-65c2bdd00051)
 
 ## Q5
+
+
+## Q6
+
+
+## Q7
+![image](https://github.com/user-attachments/assets/42d76258-4bc9-408b-8f99-465dfda367d6)
+
+## Q8
+

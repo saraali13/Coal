@@ -5,3 +5,5 @@
 ![image](https://github.com/user-attachments/assets/369142be-a1fb-4984-af12-3edad233800f)
 
 ## Q2
+![image](https://github.com/user-attachments/assets/9862bcb5-6864-41b7-b6df-b8fa37a7c0b6)
+

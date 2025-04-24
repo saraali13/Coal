@@ -9,3 +9,8 @@
 
 ## Q3
 ![image](https://github.com/user-attachments/assets/1dfff2e5-3889-4421-a008-f65ec903f14b)
+
+## Q4
+![image](https://github.com/user-attachments/assets/06b55f24-1218-4b67-a9c2-65c2bdd00051)
+
+## Q5

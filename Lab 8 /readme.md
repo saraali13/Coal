@@ -24,4 +24,5 @@
 ![image](https://github.com/user-attachments/assets/42d76258-4bc9-408b-8f99-465dfda367d6)
 
 ## Q8
-
+![image](https://github.com/user-attachments/assets/d1bbe2bc-0e7a-4d28-8969-357ae5e21833)
+![image](https://github.com/user-attachments/assets/489a0cb8-df85-42d3-89d7-98751dc956ce)

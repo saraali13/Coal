@@ -1,6 +1,3 @@
-.386
-.model flat, stdcall
-.stack 4096
 INCLUDE Irvine32.inc
 
 .data

@@ -8,46 +8,45 @@ notEqualMsg BYTE "Strings are not equal",0
 
 .code
 main PROC
-    push OFFSET Str1
-    push OFFSET Str2
-    call IsCompare
-    exit
-main ENDP
-
-IsCompare PROC
-    push ebp
-    mov ebp, esp
-    push esi
-    push edi
+    cld                     ; Clear direction flag
+    mov esi, OFFSET Str1
+    mov edi, OFFSET Str2
     
-    mov esi, [ebp+12]       ; First string
-    mov edi, [ebp+8]        ; Second string
-
-CompareLoop:
-    mov al, [esi]
-    mov bl, [edi]
-    cmp al, bl
-    jne NotEqual
-    cmp al, 0               ; Both reached null terminator?
-    je Equal
-    inc esi
-    inc edi
-    jmp CompareLoop
-
-Equal:
-    mov edx, OFFSET equalMsg
-    jmp DisplayResult
-
-NotEqual:
-    mov edx, OFFSET notEqualMsg
-
-DisplayResult:
-    call WriteString
-    call Crlf
+    ; First check lengths are equal
+    push esi
+    mov ecx, -1
+    xor al, al
+    repne scasb
+    not ecx
+    dec ecx
+    mov ebx, ecx            ; EBX = length of Str2
     
     pop edi
-    pop esi
-    pop ebp
-    ret 8                   ; Clean stack
-IsCompare ENDP
+    mov ecx, -1
+    repne scasb
+    not ecx
+    dec ecx                 ; ECX = length of Str1
+    
+    cmp ecx, ebx
+    jne NotEqual
+    
+    ; If lengths equal, compare content
+    mov esi, OFFSET Str1
+    mov edi, OFFSET Str2
+    mov ecx, ebx            ; Length to compare
+    repe cmpsb
+    jne NotEqual
+    
+Equal:
+    mov edx, OFFSET equalMsg
+    jmp Display
+    
+NotEqual:
+    mov edx, OFFSET notEqualMsg
+    
+Display:
+    call WriteString
+    call Crlf
+    exit
+main ENDP
 END main

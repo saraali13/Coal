@@ -1,3 +1,6 @@
+.386
+.model flat, stdcall
+.stack 4096
 INCLUDE Irvine32.inc
 
 .data
@@ -7,36 +10,31 @@ notFoundMsg BYTE "Character not found",0
 
 .code
 main PROC
-    call Scan_String
-    exit
-main ENDP
-
-Scan_String PROC
-    mov esi, OFFSET Str1   
-    mov ecx, 0             
-
-SearchLoop:
-    mov al, [esi]          
-    cmp al, 0              
-    je NotFound            
-    cmp al, '#'            
-    je Found               
-    inc esi                
-    inc ecx                
-    jmp SearchLoop         
-
-Found:
+    cld                     
+    mov edi, OFFSET Str1    
+    mov al, '#'             
+    mov ecx, LENGTHOF Str1  
+    
+    repne scasb             ; Repeat while not equal
+    jnz NotFound            ; Jump if not found
+    
+    ; Calculate position (EDI points one past the match)
+    mov eax, edi
+    sub eax, OFFSET Str1
+    dec eax                 ; Adjust to 0-based index
+    
     mov edx, OFFSET foundMsg
     call WriteString
-    mov eax, ecx           
-    call WriteDec
+    call WriteDec           ; Display position
     call Crlf
-    ret
-
+    jmp Done
+    
 NotFound:
     mov edx, OFFSET notFoundMsg
     call WriteString
     call Crlf
-    ret
-Scan_String ENDP
+    
+Done:
+    exit
+main ENDP
 END main
